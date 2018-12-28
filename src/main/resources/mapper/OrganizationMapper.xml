@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.yunfei.mp.mapper.OrganizationMapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.yunfei.mp.entity.OrganizationEntity" id="organizationMap">
+        <result property="objectId" column="object_id"/>
+        <result property="name" column="name"/>
+        <result property="parentId" column="parent_id"/>
+        <result property="buildingId" column="building_id"/>
+        <result property="createUser" column="create_user"/>
+        <result property="createTime" column="create_time"/>
+        <result property="modifyUser" column="modify_user"/>
+        <result property="modifyTime" column="modify_time"/>
+        <result property="active" column="active"/>
+    </resultMap>
+
+
+</mapper>
